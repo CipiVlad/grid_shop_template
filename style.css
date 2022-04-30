@@ -45,6 +45,7 @@ body {
     margin: 0 auto;
 }
 
+/* ---------------------------------------- */
 .main-container-grid {
     display: grid;
 }
@@ -59,9 +60,28 @@ body {
 .section-container-grid-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-between;
     margin: 2vh 0;
     gap: 20px;
 }
 
 /* -------------------------------------------- */
+
+.div-container-grid {}
+
+/* ------------------------------------------- */
+@media only screen and (max-width: 414px) {
+
+    .main-container-grid {
+        display: grid;
+    }
+
+    .section-container-grid-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        margin: 2vh 0;
+        gap: 20px;
+    }
+}
